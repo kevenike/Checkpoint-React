@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
-.imagem-e-texto{
+.imagem-e-texto {
     background-image: url(../../public/assets/pexelsphoto406014.jpeg);
     height: 700px;
     background-repeat: no-repeat;
@@ -11,17 +16,93 @@
 
 
 
-.Jornada{
+.Jornada {
     font-size: 30px;
     text-align: center;
     color: #5C4033;
 }
 
-.titulo-amigo-verdadeiro{
+.titulo-amigo-verdadeiro {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     text-align: center;
     font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 50px;
+    gap: 5px;
+}
+
+.card-gato-cachorro {
+    width: 25%;
+    /* background-image: url(/public/assets/CachorroBonito.avif); */
+}
+
+.card-cor-black {
+    background-color: black;
+}
+
+
+.texto-revitalize {
+    /* Estilo para o parágrafo que fala sobre a revitalização do gatinho */
+    color: aliceblue;
+    font-size: 30px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-gato-cachorro {
+    display: flex;
+    height: 400px;
+}
+
+.ArrowRight-cards {
+    color: white;
+    font-size: 50px;
+}
+
+.alinhando-o-texto-e-a-seta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 80px;
+}
+
+.icone-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.icon-coracao {
+    font-size: 60px;
+}
+
+.icon-Dog {
+    font-size: 60px;
+}
+
+.icon-Cat {
+    font-size: 60px;
+}
+
+.companheiros-amorosos {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    font-family: "Open Sans", sans-serif;
+}
+
+.imagem-pets-cards {
+    height: 400px;
+    max-width: 100%;
 }
