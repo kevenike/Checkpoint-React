@@ -43,9 +43,9 @@ export default function Home() {
 
           <div className="card-gato-cachorro">
             <div className="icone-text">
-              <FaDog className="icon-Dog" />
+              <FaCat className="icon-Cat" />
               <p className="companheiros-amorosos">
-                Cachorros: leais, brincalhões, companheiros e amigos que preenchem nossos dias com alegria.
+                  Gatos: independentes, carinhosos, misteriosos e donos de personalidades cativantes e únicas
               </p>
             </div>
           </div>
@@ -56,9 +56,9 @@ export default function Home() {
 
           <div className="card-gato-cachorro">
             <div className="icone-text">
-              <FaCat className="icon-Cat" />
+              <FaDog className="icon-Dog" />
               <p className="companheiros-amorosos">
-                Gatos: independentes, carinhosos, misteriosos e donos de personalidades cativantes e únicas
+                 Cachorros: leais, brincalhões, companheiros e amigos que preenchem nossos dias com alegria.
               </p>
             </div>
           </div>

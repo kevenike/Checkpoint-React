@@ -62,3 +62,8 @@
 }
 
 
+@media screen and (width: 1024px) {
+    .menu{
+        width: 30%;
+    }
+}
