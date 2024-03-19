@@ -65,6 +65,13 @@ export default function Home() {
 
         </div>
       </section>
+
+      <section className="imagem-texto-gato">
+        <div className="imagem-texto-gato-container">
+            <h2 className="ronronando">Ronronando em Casa: O Mundo Encantador dos Gatos</h2>
+            <p className="dicas-para-vida">DICAS PARA A VIDA COM GATOS</p>
+        </div>
+      </section>
     </main>
   );
 }
