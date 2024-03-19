@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.Cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.imagem-logo {
+    width: 150px;
+    height: 150px;
+}
+
+.menu{
+    width: 20%;
+}
+
+.links-de-navegacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.links{
+    list-style: none;
+}
+
+.links-contato:hover{
+    background-color: orangered;
+    color: white;
+
+}
+
+.link-contato{
+    text-decoration: none;
+    color: black;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    font-size: 20px;
+
+    background-color: #ddd;
+    padding: 15px;
+    border-radius: 15px;
+    transition: 1.5s;
+}
+
+.link-contato:hover{
+    background-color: orangered;
+    color: white;
+}
+
+.link{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
