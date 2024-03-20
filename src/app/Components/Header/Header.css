@@ -67,3 +67,9 @@
         width: 30%;
     }
 }
+
+@media (width: 768px){
+    .menu{
+        width: 55%;
+    }
+}

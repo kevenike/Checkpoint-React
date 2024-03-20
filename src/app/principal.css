@@ -126,7 +126,7 @@
     font-family: Arial, Helvetica, sans-serif;
     gap: 30px;
 
-    
+
 }
 
 .ronronando {
@@ -136,7 +136,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.dicas-para-vida{
+.dicas-para-vida {
     color: white;
     text-align: justify;
     font-size: 20px;
@@ -144,12 +144,12 @@
 }
 
 @media (width: 1440px) {
-    
+
     .card-gato-cachorro {
         width: 30%;
     }
 
-    .dicas-para-vida{
+    .dicas-para-vida {
         color: white;
         text-align: justify;
         font-size: 20px;
@@ -157,8 +157,8 @@
     }
 }
 
-@media (width: 1024px){
-    .titulo-amigo-verdadeiro{
+@media (width: 1024px) {
+    .titulo-amigo-verdadeiro {
         font-size: 40px;
     }
 
@@ -174,10 +174,33 @@
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    .dicas-para-vida{
+    .dicas-para-vida {
         color: white;
         text-align: justify;
         font-size: 18px;
         letter-spacing: 2px;
+    }
+}
+
+@media (width: 768px) {
+    .titulo-amigo-verdadeiro{
+        font-size: 40px;
+    }
+
+    .card-gato-cachorro {
+        width: 50%;
+    }
+
+    .texto-revitalize{
+        font-size: 25px;
+    }
+
+    .ronronando {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .dicas-para-vida {
+        font-size: 18px;
     }
 }
