@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .imagem-e-texto {
     background-image: url(../../public/assets/pexelsphoto406014.jpeg);
     height: 700px;
@@ -143,6 +138,146 @@
     letter-spacing: 10px;
 }
 
+/* seção atode  */
+
+.adote {
+    background-color: #ddd;
+}
+
+.adote-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.adote-um-cachorro {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.imagem-adote-um-cachorro {
+    width: 46%;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.mude-uma-vida {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.procurando-por-amor {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 200;
+
+}
+
+/* Beneficio de adotar um cao */
+
+.benefico-de-adotar{
+    background-color: #ddd;
+    padding: 30px;
+}
+
+.beneficio-conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.titulo-beneficio {
+    width: 30%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+.paragrafos-beneficios {
+    display: flex;
+    align-items: center;    
+    background-color: white;
+    height: 500px;
+    width: 27%;
+}
+
+.primeiro-paragrafo {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.descobrindo-a-familia-feliz-com-pet {
+    font-size: 23px;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+.cachorro-no-carro {
+    width: 40%;
+    height: 500px;
+    border-radius: 5px;
+}
+
+
+
+/* contato-doacao */
+.contato-doacao {
+    background-image: url(../../public/assets/precisadeumadoacao.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 700px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contato-doacao-content {
+   width: 30%;
+   height: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 30px;
+   padding: 50px;
+}
+
+.precisa-de-um-doce {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.ajude-nos-a-garantir {
+    font-family: sans-serif;
+    font-size: 19px;
+}
+
+.links-contato-doacao {
+     width: 25%;
+     text-align: center;
+     text-decoration: none;
+     font-size: 25px;
+     background-color: #ddd;
+     padding: 10px;
+     border-radius: 10px;
+     color: black;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 400;
+     transition: 1.5s;
+}
+
+.links-contato-doacao:hover {
+    background-color: orangered;
+    color: #fff;
+}
+
 @media (width: 1440px) {
 
     .card-gato-cachorro {
@@ -183,7 +318,7 @@
 }
 
 @media (width: 768px) {
-    .titulo-amigo-verdadeiro{
+    .titulo-amigo-verdadeiro {
         font-size: 40px;
     }
 
@@ -191,7 +326,7 @@
         width: 50%;
     }
 
-    .texto-revitalize{
+    .texto-revitalize {
         font-size: 25px;
     }
 

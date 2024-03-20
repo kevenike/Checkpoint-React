@@ -3,7 +3,6 @@
 const Contato = () => {
     return(
         <>
-
         </>
     )
 }
