@@ -22,7 +22,6 @@ export default function Home() {
 
       <section className="sobre">
         <div className="conteudo">
-
           <div className="card-gato-cachorro  card-cor-black">
             <div className="alinhando-o-texto-e-a-seta">
               <p className="texto-revitalize">Revitalize seus Vínculos com os Animais de Estimação: Uma Abordagem Abrangente</p>

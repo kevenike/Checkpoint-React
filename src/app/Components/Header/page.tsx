@@ -5,7 +5,7 @@ import Logo  from '../../../../public/assets/Amigo.png'
 const Header = () =>{
     return(
         <>
-            <header className="Cabecalho">
+            <header className="Cabecalho  cabecalho-contato">
                 <Image  className="imagem-logo" src={Logo}  alt="Logomarca da empresa"/>
                 <nav className="menu">
                     <ul className="links-de-navegacao">
