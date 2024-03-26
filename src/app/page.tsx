@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import "./principal.css"
@@ -9,17 +10,31 @@ import GatoEscodinho from "../../public/assets/gatoescondido.avif"
 import CachorroEstilo from "../../public/assets/cachorroestilo.avif"
 import AdoteUmCachorro from "../../public/assets/photo-1584303597973-0401cd1f9796isso.avif"
 import CachorroNoCarro from "../../public/assets/CachorroBonito.avif"
+import React, { useEffect, useState } from 'react';
 
-export default function Home() {
+
+const Home: React.FC = () => {
+
+   const [isVisible, setIsVisible] = useState<boolean>(true);
+   useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+   }, [isVisible]);
+
   return (
     <main >
+      {isVisible && (        
+       <div><p>Aqui está a sua mensagem!</p></div>      
+       )} 
       <section className="imagem-e-texto">
         <h1 className="titulo-amigo-verdadeiro">
           <span className="Jornada">Amigo Verdadeiro</span>
           Laços que Resistem ao Tempo
         </h1>
       </section>
-
+      
       <section className="sobre">
         <div className="conteudo">
           <div className="card-gato-cachorro  card-cor-black">
@@ -89,7 +104,7 @@ export default function Home() {
 
       <section className="benefico-de-adotar">
         <div className="beneficio-conteudo">
-          
+
           <div className="titulo-beneficio">
             <h2>Transforme Vidas: Descubra o Poder da Adoção de Pets!</h2>
           </div>
@@ -105,14 +120,16 @@ export default function Home() {
       </section>
 
       <section className="contato-doacao">
-         <div className="contato-doacao-content">
-            <h1 className="precisa-de-um-doce">Precisa de um doce coração?</h1>
-            <p className="ajude-nos-a-garantir">
-              Ajude-nos a garantir que cada cachorro abandonado encontre um lar amoroso e seguro. Com sua doação, podemos fornecer cuidados essenciais, incluindo alimentação, vacinas e esterilização, preparando-os para uma vida cheia de amor e felicidade ao lado de uma família carinhosa. Cada contribuição, por menor que seja, faz uma grande diferença na vida desses animais necessitados. Junte-se a nós nessa missão de compaixão e ajude a transformar a vida de um cachorro abandonado hoje mesmo.
-            </p>
-            <Link className="links-contato-doacao" href="../../Pages/Contato">Contato</Link>
-          </div>
+        <div className="contato-doacao-content">
+          <h1 className="precisa-de-um-doce">Precisa de um doce coração?</h1>
+          <p className="ajude-nos-a-garantir">
+            Ajude-nos a garantir que cada cachorro abandonado encontre um lar amoroso e seguro. Com sua doação, podemos fornecer cuidados essenciais, incluindo alimentação, vacinas e esterilização, preparando-os para uma vida cheia de amor e felicidade ao lado de uma família carinhosa. Cada contribuição, por menor que seja, faz uma grande diferença na vida desses animais necessitados. Junte-se a nós nessa missão de compaixão e ajude a transformar a vida de um cachorro abandonado hoje mesmo.
+          </p>
+          <Link className="links-contato-doacao" href="../../Pages/Contato">Contato</Link>
+        </div>
       </section>
     </main>
   );
 }
+
+export default Home;

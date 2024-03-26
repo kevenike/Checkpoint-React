@@ -1,11 +1,13 @@
-import Formulario from  "../../Components/Formulario/page"
+"use client";
+import Formulario from "../../Components/Formulario/page"
 
 const Contato = () => {
 
-    return (
-        <>
-        <Formulario />
-        </>
+
+    return (     
+    <>
+    <Formulario />
+    </>
     )
 }
 export default Contato;
