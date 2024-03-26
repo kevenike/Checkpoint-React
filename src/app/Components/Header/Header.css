@@ -1,26 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 .header-contato-active {
-    background-color: black; /* Muda a cor de fundo para preto */
+    background-color: #faf1f1; /* Muda a cor de fundo para cinza */
    }
+
+.links-contato-active {
+    background-color: #b60000;
+    font-size: 50px;
+}
+
    
-.links-contato-active{
-    text-decoration: none;
-    color: black;
-    font-family: "Roboto Mono", monospace;
-    font-weight: 400;
-    font-size: 20px;
-
-    background-color: #ddd;
-    padding: 15px;
-    border-radius: 15px;
-    transition: 1.5s;
-}
-
-.links-contato-active:hover {
-    background-color: orangered;
-    color: white;
-}
 
 .Cabecalho {
     display: flex;

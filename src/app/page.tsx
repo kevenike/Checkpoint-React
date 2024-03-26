@@ -15,26 +15,32 @@ import React, { useEffect, useState } from 'react';
 
 const Home: React.FC = () => {
 
-   const [isVisible, setIsVisible] = useState<boolean>(true);
-   useEffect(() => {
+  const [isVisible, setIsVisible] = useState<boolean>(true);
+  const [fadeClass, setFadeClass] = useState<string>('fade-in');
+
+  useEffect(() => {
     const timer = setTimeout(() => {
-      setIsVisible(false);
-    }, 2000);
+      setFadeClass('fade-out');
+      setTimeout(() => {
+        setIsVisible(false);
+      }, 1000); // Wait for the fade-out animation to complete
+    }, 2000); // Initial delay before starting the fade-out
+
     return () => clearTimeout(timer);
-   }, [isVisible]);
+  }, []);
 
   return (
     <main >
-      {isVisible && (        
-       <div><p>Aqui está a sua mensagem!</p></div>      
-       )} 
+      {isVisible && (
+        <div className={fadeClass}><p>Bem Vindo</p></div>
+      )}
       <section className="imagem-e-texto">
         <h1 className="titulo-amigo-verdadeiro">
           <span className="Jornada">Amigo Verdadeiro</span>
           Laços que Resistem ao Tempo
         </h1>
       </section>
-      
+
       <section className="sobre">
         <div className="conteudo">
           <div className="card-gato-cachorro  card-cor-black">
