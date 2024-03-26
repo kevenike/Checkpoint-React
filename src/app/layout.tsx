@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import Header from "./Components/Header/page";
+import Header from "./Components/Header/header";
 import Footer from "./Components/Footer/page";
 import "./Global.css"
+import Exemplo02 from "./Components/Formulario/page";
 
 
 
